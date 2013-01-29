@@ -1,0 +1,28 @@
+<!-- Exemplo baseado na documentação da API Google -->
+<!-- https://developers.google.com/maps/documentation/javascript/?hl=pt-br -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo Mapa</title>
+	<style type="text/css">
+		html, body { 
+			height: 100%;
+		}		  
+		#map_canvas { 
+			height: 100%; 
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+	<form action="" id="buscaForm" method="post">
+		<label for="endereco">Endereço</label>
+		<input type="text" name="endereco" id="endereco" size="50"/>
+		<input type="submit" name="buscar" id="buscar" value="Buscar"/>
+	</form> 	
+	<p id="resultado"></p>
+	<div id="map_canvas" style="width:50%; height:50%"></div>
+</body>
+</html>
