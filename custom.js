@@ -61,6 +61,15 @@ function criaMapa(lat, lng) {
 //		criaMarcador(event.latLng, map);
 //		criaCirculo(event.latLng, map);
 //	});
+	google.maps.event.addListener(map, 'click', function(event) {
+		// limpa o mapa
+		apagaCirculos();
+		apagaMarcadores();
+
+		
+		criaMarcador(event.latLng, map);
+		criaCirculo(event.latLng, map);
+	});
 	
 }
 
